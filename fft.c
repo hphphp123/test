@@ -162,7 +162,7 @@ void main() {
   float data[16];
   float output[16];
   float zero=0;
-  /*
+  
   FILE * fp;
   fp=fopen("1.txt","r");
   if (fp == NULL)
@@ -173,10 +173,9 @@ void main() {
   while ((data[i++] = atof(fgetc(fp)))!=EOF) printf("%f ",data[i-1]);
 
   fclose(fp);
-  */
 
-  printf("\ntype 16 point input vector\n");
-  scanf("%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f",&data[0],&data[1],&data[2],&data[3],&data[4],&data[5],&data[6],&data[7],&data[8],&data[9],&data[10],&data[11],&data[12],&data[13],&data[14],&data[15]);
+  //printf("\ntype 16 point input vector\n");
+  //scanf("%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f",&data[0],&data[1],&data[2],&data[3],&data[4],&data[5],&data[6],&data[7],&data[8],&data[9],&data[10],&data[11],&data[12],&data[13],&data[14],&data[15]);
   
   R16SRFFT(data,output);
   printf("\nresult is:\n");
